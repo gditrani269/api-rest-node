@@ -14,7 +14,7 @@ app.get('/hola2', function (req, res) {
     res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
     res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
-  res.send('[{"estilo": "Irish Red"},{"estilo": "Apa"},{"estilo": "Ipa"},{"estilo": "Porter"},{"estilo": "Stout"}]');
+  res.send('[{"estilo": "Irish Red"},{"estilo": "Apa"},{"estilo": "Ipa"},{"estilo": "Porter"},{"estilo": "Stout"},{"estilo": "Honey"}]');
 });
 
 
@@ -35,6 +35,9 @@ app.get('/recetas/:nombre', function(req, res) {
 	}
 	if (req.params.nombre === "Stout" ) {
 		sMens = "Stout"
+	}
+	if (req.params.nombre === "Honey" ) {
+		sMens = "Honey"
 	}
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
