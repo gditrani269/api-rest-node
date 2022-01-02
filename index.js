@@ -55,8 +55,8 @@ app.get('/:id', function (req, res) {
 	}
 });
 
-/*app.listen(8080, () => {
- console.log("El servidor está inicializado en el puerto 3000");
-});*/
+app.listen(8080, () => {
+ console.log("El servidor está inicializado en el puerto 8080");
+});
 
-export.app = functions.https.onRequest(app);
+/*export.app = functions.https.onRequest(app);*/
