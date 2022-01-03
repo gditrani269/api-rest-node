@@ -58,7 +58,7 @@ app.get('/:id', function (req, res) {
 	}
 });
 
-app.listen(8080, () => {
+app.listen(80, () => {
  console.log("El servidor está inicializado en el puerto 8080");
 });
 
