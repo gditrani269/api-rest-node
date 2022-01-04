@@ -58,8 +58,9 @@ app.get('/:id', function (req, res) {
 	}
 });
 
-app.listen(3000, () => {
- console.log("El servidor está inicializado en el puerto 8080");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.warn(`App listening on http://localhost:${PORT}`);
 });
 
 /*export.app = functions.https.onRequest(app);*/
