@@ -99,7 +99,7 @@ app.get('/recetas2/:nombre', function(req, res, next) {
 	var que = {
 		  // give the query a unique name
 		  name: 'fetch-user',
-		  text: "SELECT receta FROM cerveza WHERE estilo = $1",
+		  text: "SELECT receta, estilo FROM cerveza WHERE estilo = $1",
 		  values: [sMens],
 		}
 //  client.query("SELECT receta FROM cerveza WHERE estilo = ${sMens};", (err, result) => {
